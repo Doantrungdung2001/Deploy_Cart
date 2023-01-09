@@ -33,15 +33,15 @@
         <tbody>
             @foreach(Session::get('Cart')->product as $item)
             <tr>
-                <td class="si-pic"><img src="{{$item['productInfo']->image_url}}" alt=""></td>
+                <td class="si-pic"><img src="{{$item['productInfo']['image_url']}}" alt=""></td>
                 <td class="si-text">
                     <div class="product-selected">
-                        <p>{{number_format($item['productInfo']->price)}}₫</p>
-                        <h6>{{$item['productInfo']->name}}</h6>
+                        <p>{{number_format($item['productInfo']['price'])}}₫</p>
+                        <h6>{{$item['productInfo']['name']}}</h6>
                     </div>
                 </td>
                 <td class="si-close">
-                    <i class="ti-close" data-id="{{$item['productInfo']->id}}"></i>
+                    <i class="ti-close" data-id="{{$item['productInfo']['id']}}"></i>
                 </td>
             </tr>
             @endforeach
