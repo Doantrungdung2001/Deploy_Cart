@@ -125,7 +125,7 @@ class CartController extends Controller
         }
         // return $value->totalQuanty;
         return response([
-            //'id_user'=> $value->id_user,
+            'id_user'=> $value->id_user,
             'toatalQuanty' => $value->totalQuanty
         ]);
     }

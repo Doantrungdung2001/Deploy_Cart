@@ -28,17 +28,6 @@ class Cart{
         $this->totalPrice += $product['price'];
         $this->totalQuanty++;
         $this->id_user = 2;
-        // $newProduct = ['quanty'=>0,'price'=>$product->price,'productInfo'=>$product];
-        // if($this->product){
-        //     if(array_key_exists($id,$this->product)){
-        //         $newProduct =$this->product[$id];
-        //     }
-        // }
-        // $newProduct['quanty']++;
-        // $newProduct['price'] = $newProduct['quanty'] * $product->price;
-        // $this->product[$id] = $newProduct;
-        // $this->totalPrice += $product->price;
-        // $this->totalQuanty++;
     }
 
     public function DeleteItemCart($id){
