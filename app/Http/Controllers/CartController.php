@@ -20,7 +20,7 @@ class CartController extends Controller
     }
 
     public function AddCart(Request $req,$id){
-        $res = Http::get('https://p01-product-api-production.up.railway.app/api/user/products()');
+        $res = Http::get('https://p01-product-api-production.up.railway.app/api/user/products');
         foreach($res['data'] as $prd){
             if($prd['sub_products'] != null){
                 foreach($prd['sub_products'] as $item){
@@ -118,11 +118,6 @@ class CartController extends Controller
                     'toatalPrice' => $totalPrice,
                     'id_user' => $id_user];
         return $product;
-        // return response([
-        //     'message' => 'OK'
-        //     'data' => $product
-        // ]);
-         
     }
     public function total_product_cart(Request $req){
         if(Session('Cart')){
@@ -130,6 +125,7 @@ class CartController extends Controller
         }
         // return $value->totalQuanty;
         return response([
+            //'id_user'=> $value->id_user,
             'toatalQuanty' => $value->totalQuanty
         ]);
     }

@@ -37,22 +37,6 @@
     </div>
 
 
-    <!-- Breadcrumb Section Begin -->
-    <div class="breacrumb-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-text product-more">
-                        <a href="{{url('/')}}"><i class="fa fa-home"></i> Home</a>
-                        <a href="./shop.html">Shop</a>
-                        <span>Shopping Cart</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb Section Begin -->
-
     <!-- Shopping Cart Section Begin -->
     <section class="shopping-cart spad">
         <div class="container">
@@ -141,7 +125,7 @@
                                     <li class="subtotal">Total Quanty : <span>{{Session::get('Cart')->totalQuanty}}</span></li>
                                     <li class="cart-total">Total Price :<span>{{number_format(Session::get('Cart')->totalPrice)}}₫</span></li>
                                 </ul>
-                                <a href="#" class="proceed-btn">Thanh toán</a>
+                                <a href="#" class="proceed-btn">Đặt hàng</a>
                                 @endif
                             </div>
                         </div>

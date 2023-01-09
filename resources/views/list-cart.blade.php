@@ -54,7 +54,7 @@
                     <li class="subtotal">Tổng số lượng : <span>{{Session::get('Cart')->totalQuanty}}</span></li>
                     <li class="cart-total">Tổng tiền :<span>{{number_format(Session::get('Cart')->totalPrice)}}₫</span></li>
                 </ul>
-                <a href="#" class="proceed-btn">Thanh toán</a>
+                <a href="#" class="proceed-btn">Đặt hàng</a>
                 @endif
             </div>
         </div>
