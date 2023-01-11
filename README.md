@@ -6,7 +6,7 @@
 2. Composer install
 3. php artisan serve
 
-# if file .env can't install
+# If file .env can't install
 
 1. copy file .env.example
 2. fix .env.example(copy)->.env
